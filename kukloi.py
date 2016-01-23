@@ -60,4 +60,4 @@ def animate(i):
    # Interval draws a new frame every given milliseconds
 ani = animation.FuncAnimation(fig, animate, np.arange(3, 800),
 init_func=init, interval=25)
-ani.save(ph+"kukloi.mp4", fps=40)
+ani.save(ph+"/kukloi.mp4", fps=40)
