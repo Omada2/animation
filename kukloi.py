@@ -1,6 +1,9 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+
+ph = os.path.expanduser('~/public_html')
 # Create a default figure and subplot
 fig, ax = plt.subplots()
 # Specify x - y axes' range respectively
@@ -57,4 +60,4 @@ def animate(i):
    # Interval draws a new frame every given milliseconds
 ani = animation.FuncAnimation(fig, animate, np.arange(3, 800),
 init_func=init, interval=25)
-ani.save("kukloi.mp4", fps=40)
+ani.save(ph+"kukloi.mp4", fps=40)
